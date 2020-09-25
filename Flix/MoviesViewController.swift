@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    //Create array of movies
     var movies = [[String : Any]]()
     
@@ -16,8 +16,9 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
         tableView.dataSource = self
+        tableView.delegate = self
+        
 
         // Do any additional setup after loading the view.
         print ("Hello")
@@ -37,6 +38,7 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
          
               // TODO: Reload your table view data
             self.tableView.reloadData()
+            
             print(dataDictionary)
            }
         }
@@ -45,11 +47,12 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movies.count
+        return movies.capacity
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
+        
         let movie = movies[indexPath.row]
         let title = movie["title"] as! String
         let synopsis = movie["overview"] as! String
