@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gYi-JV-txh">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="gYi-JV-txh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="rHv-kK-IWR">
-                                        <rect key="frame" x="118" y="337" width="138" height="139"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="rHv-kK-IWR">
+                                        <rect key="frame" x="118.66666666666669" y="336.66666666666669" width="138" height="139"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -33,6 +33,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gYi-JV-txh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="D7B-pN-5fp"/>
+                            <constraint firstAttribute="bottom" secondItem="gYi-JV-txh" secondAttribute="bottom" id="GsD-Qz-phe"/>
+                            <constraint firstItem="gYi-JV-txh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gUg-Ls-er5"/>
+                            <constraint firstItem="gYi-JV-txh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="il0-eb-nXb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
