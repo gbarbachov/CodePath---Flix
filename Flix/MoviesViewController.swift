@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    //Create array of movies
@@ -58,6 +59,12 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let synopsis = movie["overview"] as! String
         cell.movieTitle.text = title
         cell.synopsisLabel.text = synopsis
+        
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        let posterPath = movie["poster_path"] as! String
+        let posterUrl = URL(string:baseUrl + posterPath)
+        
+        cell.posterView.af_setImage(withURL: posterUrl!)
         
         return cell
         
