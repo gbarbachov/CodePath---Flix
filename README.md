@@ -42,9 +42,9 @@ Describe any challenges encountered while building the app.
 
 ### App Walkthrough GIF
 
-<img src="http://g.recordit.co/NWOR10ofdU.gif" width=250><br>
+<img src="http://g.recordit.co/p5doGNLnA0.gif" width=250><br>
 
-<img src="http://g.recordit.co/VE5YbtdaLZ.gif" width=750><br>
+<img src="http://g.recordit.co/ybI5mty5cR.gif" width=750><br>
 
 ### Notes
 1. First bonus feature took a while to figure out.
