@@ -44,6 +44,8 @@ Describe any challenges encountered while building the app.
 
 <img src="http://g.recordit.co/NWOR10ofdU.gif" width=250><br>
 
+<img src="http://g.recordit.co/VE5YbtdaLZ.gif" width=250><br>
+
 ### Notes
 1. First bonus feature took a while to figure out.
 2. Still unsure how to do a vertical alignment of the label text (for the movie description).
