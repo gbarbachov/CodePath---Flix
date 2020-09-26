@@ -44,7 +44,7 @@ Describe any challenges encountered while building the app.
 
 <img src="http://g.recordit.co/NWOR10ofdU.gif" width=250><br>
 
-<img src="http://g.recordit.co/VE5YbtdaLZ.gif" width=250><br>
+<img src="http://g.recordit.co/VE5YbtdaLZ.gif" width=750><br>
 
 ### Notes
 1. First bonus feature took a while to figure out.
