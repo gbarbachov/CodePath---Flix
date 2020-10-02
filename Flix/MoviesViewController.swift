@@ -58,7 +58,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let title = movie["title"] as! String
         let synopsis = movie["overview"] as! String
         cell.movieTitle.text = title
+        
         cell.synopsisLabel.text = synopsis
+        cell.synopsisLabel.sizeToFit()
         
         let baseUrl = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
