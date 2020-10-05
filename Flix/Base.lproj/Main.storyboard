@@ -56,13 +56,14 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zCE-Wq-U00">
                                                     <rect key="frame" x="8" y="8" width="178" height="279"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="194" height="298"/>
                                         <connections>
                                             <outlet property="posterView" destination="zCE-Wq-U00" id="oGI-MI-j6c"/>
+                                            <segue destination="J4A-sK-jak" kind="show" id="cwx-VW-7ze"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -79,6 +80,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UJd-Mc-Ex9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2160.8695652173915" y="440.625"/>
+        </scene>
+        <!--Superhero Movie Details View Controller-->
+        <scene sceneID="hVg-nQ-2VA">
+            <objects>
+                <viewController id="J4A-sK-jak" customClass="SuperheroMovieDetailsViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vDK-1e-fLo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XhN-Xe-Fk0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aJv-jQ-8jT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GsR-Tj-6Ko" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2161" y="1093"/>
         </scene>
         <!--Movies-->
         <scene sceneID="tne-QT-ifu">
